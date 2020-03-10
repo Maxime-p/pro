@@ -1,0 +1,252 @@
+/*----------- 
+General things
+----------- */
+:root{
+    --color-main: lavender;
+}
+
+html {scroll-behavior: smooth;}
+
+body{
+    font-family: 'Calistoga', cursive;
+    margin: 0px;
+    color: var(--color-main);
+}
+
+h1{
+    font-size: 80px;
+    margin: 20px 0px;
+}
+
+h2{
+    font-size: 50px;
+    margin: 20px 0px;
+}
+
+h2.title{
+    margin-top: 70px;
+}
+
+h3{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+h4{
+    font-size: 23px;
+}
+
+p.desc{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+a{
+    color: rgb(61, 61, 255);
+}
+
+a:not(.link){
+    color: var(--color-main);
+    text-decoration: none;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-sa{
+    justify-content: space-around;
+}
+
+.flex-alignit-center{
+    align-items: center;
+}
+
+.full{
+    width: 100%;
+    height: 100vh;
+}
+
+/*----------- 
+    Sidebar
+----------- */
+
+.sidebar{
+    position: fixed;
+    margin: auto 0px auto 20px;
+    height: 100vh;
+}
+
+.selector{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translatey(-50%);
+    transform: translatey(-50%);
+}
+
+.selector::before{
+    content: '';
+
+}
+
+.item{
+    width: 150px;
+    padding: 20px 0px;
+}
+
+.item > label{
+    margin: 0px;
+}
+
+/*----------- 
+   Content
+----------- */
+
+.container{
+    width: 100%;
+}
+
+.container > * {
+    width: 80%;
+    height: 100vh;
+    padding: 0px 10%;
+}
+
+/*----------- 
+  Section 1
+----------- */
+
+#top img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+h2#desc::before{
+    content: '—';
+}
+
+/*----------- 
+  Section 2
+----------- */
+
+#discover{
+}
+
+/*----------- 
+  Section 3
+----------- */
+
+#project{
+}
+
+/*----------- 
+  Section 4
+----------- */
+
+#contact{
+}
+
+label{
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],input[type="email"],textarea{
+    display: block;
+    font-size: 20px;
+    width: 250px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+}
+
+textarea{
+    width: 400px;
+    height: 200px;
+}
+
+input[type="submit"]{
+    font-size: 20px;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    background-color: var(--color-main);
+}
+
+#contact img{
+    width: 70px;
+    height: 70px;
+    margin: 10px 15px;
+}
+
+.reseau .icon-hover {
+    display: none;
+}
+.reseau:hover .icon-hover {
+    display: block;
+}
+.reseau:hover .icon-default {
+    display: none;
+}
+
+/*----------- 
+Footer and fixied element
+----------- */
+
+footer{
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+}
+
+footer > p{
+    color: rgb(0, 0, 0, 0.7);
+    margin: 0px;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+footer > p:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+#gotop{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    width: 60px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+#gotop > img{
+    width: 60px;
+    height: 60px;
+}
+
+/*----------- 
+ Particles JS
+----------- */
+
+#particles-js{
+    position: fixed;
+    top: 0px; 
+    width: 100%; 
+    height: 100vh; 
+    background-color: #b61924; 
+    background: rgb(83,73,255);
+    background: linear-gradient(198deg, rgba(83,73,255,1) 41%, rgba(255,106,0,1) 100%);
+    z-index: -1;
+}
