@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php require_once('src/vue/head.php'); ?>
+    <?php require_once('vue/head.php'); ?>
 </head>
 <body>
 
-    <?php require_once('src/vue/sidebar.php');  ?>
+    <?php require_once('vue/sidebar.php');  ?>
     <div class='container flex-col flex-alignit-center'>
-        <?php 
-        require_once('src/vue/main.php'); 
-        require_once('src/vue/discover.php');
-        require_once('src/vue/project.php');
-        require_once('src/vue/contact.php');
+        <?php
+        require_once('vue/main.php');
+        require_once('vue/discover.php');
+        require_once('vue/project.php');
+        require_once('vue/contact.php');
         ?>
     </div>
     <a id="gotop" href="#top"><img src="asset/img/arrow.svg"></a>
 
-    <footer><p>2019 &copy; pro.maxime-p.fr | All rights reserved</p></footer>
+    <footer><p><?php echo $footer; ?></p></footer>
 
     <div id="particles-js"></div>
     <script src="asset/module/particles.min.js"></script>

@@ -24,7 +24,21 @@ h2{
 }
 
 h2.title{
+    position: relative;
     margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+h2.title::after{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 10%;
+    height: 5px;
+    background-color: var(--color-main);
+    margin-top: 15px;
+    margin-left: 5px;
+    border-radius: 20px;
 }
 
 h3{
@@ -34,6 +48,11 @@ h3{
 
 h4{
     font-size: 23px;
+}
+
+p.content{
+    font-size: 40px;
+    line-height: 1.6;
 }
 
 p.desc{
@@ -93,7 +112,14 @@ a:not(.link){
 
 .selector::before{
     content: '';
-
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 372px;
+    margin-left: 5px;
+    background-color: lightcyan;
+    border-radius: 30px;
+    z-index: -2;
 }
 
 .item{
@@ -146,6 +172,22 @@ h2#desc::before{
 ----------- */
 
 #project{
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.grid > .item{
+    grid-row: 1;
+    width: 90%;
+}
+
+.grid > .item:nth-child(n+3){
+    grid-row: 2;
 }
 
 /*----------- 
